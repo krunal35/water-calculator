@@ -4,7 +4,7 @@ import "@mdi/font/css/materialdesignicons.css";
 import "primevue/resources/themes/aura-light-green/theme.css";
 import { createRouter, createWebHistory } from "vue-router";
 import { trackersRoutes } from "./routes/trackersRoutes";
-import BmrCalculator from "./pages/fitness-trackers/BmrCalculator.vue";
+import CalorieCalculator from './pages/fitness-trackers/CalorieCalculator.vue'
 
 import NotFoundPage from "./pages/404/NotFoundPage.vue";
 import { createApp } from "vue";
@@ -45,12 +45,12 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      redirect: "/bmr-calculator",
+      redirect: "/calorie-calculator",
     },
     {
-      path: "/bmr-calculator",
-      component: BmrCalculator,
-      name: "bmrCalculator",
+      path: "/calorie-calculator",
+      component: CalorieCalculator,
+      name: "calorieCalculator",
     },
     { path: "/:catchAll(.*)", redirect: "/404" },
     {

@@ -1,15 +1,15 @@
 // fitness trackers routes
-import BmrCalculator from "@/pages/fitness-trackers/BmrCalculator.vue";
 import { createRouter, createWebHistory } from "vue-router";
+import CalorieCalculator from '../pages/fitness-trackers/CalorieCalculator.vue';
 
 //routes
 const routes = [
   
    
       {
-        path: "/bmr-calculator",
-        component: BmrCalculator,
-        name: "bmrCalculator"  },
+        path: "/calorie-calculator",
+        component: CalorieCalculator,
+        name: "calorieCalculator"  },
 ];
 
 export const trackersRoutes = createRouter({
