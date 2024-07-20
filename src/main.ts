@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@mdi/font/css/materialdesignicons.css";
 import "primevue/resources/themes/aura-light-green/theme.css";
 import { createRouter, createWebHistory } from "vue-router";
-
+import BmiCalculator from "./pages/fitness-trackers/BmiCalculator.vue";
 import { trackersRoutes } from "./routes/trackersRoutes";
 
 import NotFoundPage from "./pages/404/NotFoundPage.vue";
@@ -45,11 +45,11 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      redirect: "/GymGenius",
+      redirect: "/bmi-calculator",
     },
     {
-      path: "/GymGenius",
-      component: LandingPage,
+      path: "/bmi-calculator",
+      component: BmiCalculator,
       name: "GymGenius",
     },
     { path: "/:catchAll(.*)", redirect: "/404" },
@@ -85,5 +85,3 @@ app.use(VImageMagnifier);
 
 // Mount the app
 app.mount("#app");
-
-import "bootstrap/dist/js/bootstrap.js";
