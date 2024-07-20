@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.css";
 import "@mdi/font/css/materialdesignicons.css";
 import "primevue/resources/themes/aura-light-green/theme.css";
 import { createRouter, createWebHistory } from "vue-router";
-import BmiCalculator from "./pages/fitness-trackers/BmiCalculator.vue";
 import { trackersRoutes } from "./routes/trackersRoutes";
+import BmrCalculator from "./pages/fitness-trackers/BmrCalculator.vue";
 
 import NotFoundPage from "./pages/404/NotFoundPage.vue";
 import { createApp } from "vue";
@@ -45,12 +45,12 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      redirect: "/bmi-calculator",
+      redirect: "/bmr-calculator",
     },
     {
-      path: "/bmi-calculator",
-      component: BmiCalculator,
-      name: "GymGenius",
+      path: "/bmr-calculator",
+      component: BmrCalculator,
+      name: "bmrCalculator",
     },
     { path: "/:catchAll(.*)", redirect: "/404" },
     {
