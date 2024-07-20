@@ -7,7 +7,7 @@ const routes = [
   
    
       {
-        path: "bmi-calculator",
+        path: "/bmi-calculator",
         component: BmiCalculator,
         name: "bmiCalculator"  },
 ];
