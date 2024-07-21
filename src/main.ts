@@ -4,7 +4,7 @@ import "@mdi/font/css/materialdesignicons.css";
 import "primevue/resources/themes/aura-light-green/theme.css";
 import { createRouter, createWebHistory } from "vue-router";
 import { trackersRoutes } from "./routes/trackersRoutes";
-import CalorieCalculator from './pages/fitness-trackers/CalorieCalculator.vue'
+import TdeeCalculator from './pages/fitness-trackers/TdeeCalculator.vue'
 
 import NotFoundPage from "./pages/404/NotFoundPage.vue";
 import { createApp } from "vue";
@@ -45,12 +45,12 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      redirect: "/calorie-calculator",
+      redirect: "/tdee-calculator",
     },
     {
-      path: "/calorie-calculator",
-      component: CalorieCalculator,
-      name: "calorieCalculator",
+      path: "/tdee-calculator",
+      component: TdeeCalculator,
+      name: "tdeeCalculator",
     },
     { path: "/:catchAll(.*)", redirect: "/404" },
     {
