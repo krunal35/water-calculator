@@ -1,15 +1,15 @@
 // fitness trackers routes
 import { createRouter, createWebHistory } from "vue-router";
-import TdeeCalculator from '../pages/fitness-trackers/TdeeCalculator.vue'
+import WaterCalculator from '../pages/fitness-trackers/WaterCalculator.vue'
 
 //routes
 const routes = [
   
    
       {
-        path: "/tdee-calculator",
-        component: TdeeCalculator,
-        name: "tdeeCalculator"  },
+        path: "/water-calculator",
+        component: WaterCalculator,
+        name: "waterCalculator"  },
 ];
 
 export const trackersRoutes = createRouter({
